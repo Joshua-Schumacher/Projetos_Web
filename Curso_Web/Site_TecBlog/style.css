@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    background-color: rgb(248, 176, 41);
+    height: 140px;
+    width: auto;
+}
+
+#tec_color{
+    color: rgb(28, 27, 27);
+}
+
+#blog_color{
+    color: whitesmoke;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+    
+}
+
+.navegacao{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    position: relative;
+    
+}
+
+a{
+    padding: 15px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:visited{
+    color: gray;
+}
+
+.postagem1{
+    background-color:rgb(250, 250, 250) ;
+    width: 50%;
+    height: 1000px;
+    margin-top: 20px;
+    margin-left: 15%;
+    
+}
+
+.texto_post{
+    padding: 30px;
+}
+
+#titulo_post{
+    color: rgb(224, 144, 25);
+}
+
+img{
+    margin-top: 10px;
+
+}
+
+.aside_right{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 150px;
+    margin-right: 100px;
+    width: 400px;
+}
+
+.espaco_titulo{
+    background-color: rgb(119, 118, 118);
+}
+
+.texto_padding{
+    padding: 20px;
+}
+
+.aside_right2{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 400px;
+    margin-right: 100px;
+    width: 400px;
+}
+
+.leia_mais{
+    color: rgb(175, 175, 49);
+}

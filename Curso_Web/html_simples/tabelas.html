@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas_html</title>
+</head>
+<body>
+    
+    <h1>Produtos</h1>
+    
+    <table border="2" width="300">
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        
+        <tr> 
+            <td> 001</td>
+            <td> Notebook</td>
+            <td> R$ 2.500,00</td>
+        </tr>
+        <tr>
+            <td> 002</td>
+            <td> Tablet</td>
+            <td> R$ 1000,00</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Desconto</td>
+            <!-- rowspan: mescla linhas da tabela-->
+            <td colspan="2"> cupom1 </td>  
+            <!-- colspan: mescla células da tabelas -->
+        </tr>
+
+        <tr>
+            <td colspan="2"> cupom2 </td>  
+        </tr>
+
+        
+    </table>
+
+</body>
+</html>

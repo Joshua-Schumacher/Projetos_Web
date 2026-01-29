@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos</title>
+
+    <style>
+
+        body{
+            background-color: aquamarine;
+        }
+
+        #container{
+            background: white;
+            width: 800px;
+            margin: 10px auto;
+            position: relative;
+        }
+
+        p{
+            width: 300px;
+        }
+
+        .relative{ /* posiciona o elemento em relação 
+            a posição padrão */
+            border: 1px solid red;
+            position: relative;
+            left: 25px;
+        }
+
+        .absolute{ /* o elemento é posicionado em relação ao container */
+            border: 1px solid red;
+            position: absolute;
+            top: 30px;
+            left: 100px;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <div id="container">
+        <h1>Posicionamentos</h1>
+        <p class="absolute">P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus quam nec vulputate porttitor. Quisque et bibendum ligula.</p>
+        <br>
+        <p class="relative">P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus quam nec vulputate porttitor. Quisque et bibendum ligula.</p>
+        <br>
+        <p>P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus quam nec vulputate porttitor. Quisque et bibendum ligula.</p>
+    </div>
+
+</body>
+</html>

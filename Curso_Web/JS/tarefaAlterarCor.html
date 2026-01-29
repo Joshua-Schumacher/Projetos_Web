@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar cor do input</title>
+    
+    <script>
+
+        function Amarelo(){
+            document.getElementById('mensagem').style.backgroundColor = 'yellow'
+        }
+
+        function Desfoque(){
+             document.getElementById('mensagem').style.backgroundColor = ''
+        }
+
+        function Vermelho(){
+            document.getElementById('mensagem').style.backgroundColor = 'red'
+        }
+
+        function Verde(){
+            document.getElementById('mensagem').style.backgroundColor = 'green'
+        }
+        
+        document.addEventListener('DOMContentLoaded', function(){  // garante que o código espere o DOM carregar para não retornar o value = null
+            document.getElementById('mensagem').addEventListener('input',function ContarCarcteres(){
+                let contagem = this.value.length
+    
+                if (contagem < 3) {
+                    Vermelho()
+                }
+                else if (contagem >= 3){
+                    Verde()
+                }
+            }) 
+
+        })
+    </script>
+
+</head>
+<body>
+    <input id="mensagem" type="text" onfocus="Amarelo()" onblur="Desfoque()" >
+</body>
+</html>

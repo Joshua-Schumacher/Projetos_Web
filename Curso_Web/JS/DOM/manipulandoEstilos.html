@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando estilos de elementos</title>
+
+    <script>
+        function ModificaEstilo(corDeFundo) {
+            document.getElementById('quadrado').style.backgroundColor = corDeFundo
+        }
+    </script>
+
+</head>
+<body>
+    <h3>Manipulando Estilo</h3>
+
+    <button type="button" onclick="ModificaEstilo('#ff0000')">Vermelho</button>
+    <button type="button" onclick="ModificaEstilo('#00ff00')">Verde</button>
+    <button type="button" onclick="ModificaEstilo('#0000ff')">Azul</button>
+    
+    <hr>
+    <div style="border:solid 1px #000; width: 100px; height: 100px" id="quadrado"></div>
+</body>
+</html>
